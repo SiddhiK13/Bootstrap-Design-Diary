@@ -1,0 +1,302 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow-x: hidden;
+    }
+
+    :root {
+      --primary-green: #2e8b57;
+      --dark-bg: #2c3e50;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      background-color: var(--dark-bg);
+      color: white;
+      font-size: 14px;
+      padding: 10px 0;
+    }
+
+    .countdown-item {
+      display: inline-block;
+      text-align: center;
+      margin: 0 5px;
+    }
+
+    .countdown-item .number {
+      background: #0d6efd;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 4px;
+      display: inline-block;
+      min-width: 45px;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .countdown-item .label {
+      color: #fff;
+      font-size: 11px;
+      margin-left: 4px;
+    }
+
+    /* Navbar */
+    .navbar {
+      padding: 15px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: var(--primary-green) !important;
+    }
+
+    .nav-link {
+      color: #333 !important;
+      font-weight: 600;
+      padding: 8px 15px !important;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--primary-green) !important;
+    }
+
+    .text-success {
+      color: var(--primary-green) !important;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Img/h1_hero1.jpg') center center/cover;
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: white;
+      position: relative;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+      padding: 40px;
+    }
+
+    .hero h1 {
+      font-weight: 800;
+      font-size: 2.8rem;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin: 15px 0 25px;
+      line-height: 1.6;
+    }
+
+    .btn-success {
+      background-color: var(--primary-green) !important;
+      border: none !important;
+      padding: 12px 30px;
+      font-weight: 600;
+      border-radius: 4px;
+      transition: all 0.3s;
+    }
+
+    .btn-success:hover {
+      background-color: #256b46 !important;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(46, 139, 87, 0.3);
+    }
+
+    /* About Section */
+    .about-area {
+      padding: 80px 0;
+    }
+
+    .about-area img {
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    /* Programs Section */
+    section.py-5 {
+      padding: 80px 0 !important;
+    }
+
+    .card {
+      border: none;
+      transition: all 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important;
+    }
+
+    .card img {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    /* Resources Section */
+    .list-group-item {
+      border: 1px solid #dee2e6;
+      padding: 20px;
+      transition: all 0.3s;
+    }
+
+    .list-group-item:hover {
+      background-color: #f8f9fa;
+      border-left: 4px solid var(--primary-green);
+    }
+
+    .btn-outline-success {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-color: var(--primary-green) !important;
+      color: var(--primary-green) !important;
+      transition: all 0.3s;
+    }
+
+    .btn-outline-success:hover {
+      background-color: var(--primary-green) !important;
+      color: white !important;
+    }
+
+    /* Story Cards */
+    .card-body p {
+      color: #333;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* Partners Section */
+    .d-flex.gap-4 img {
+      max-height: 50px;
+      opacity: 0.6;
+      transition: opacity 0.3s;
+    }
+
+    .d-flex.gap-4 img:hover {
+      opacity: 1;
+    }
+
+    /* Trust Section */
+    .bg-success {
+      background-color: var(--primary-green) !important;
+    }
+
+    .object-fit-cover {
+      object-fit: cover;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--dark-bg);
+    }
+
+    footer a {
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: var(--primary-green) !important;
+    }
+
+    /* Social Icons */
+    .fa-brands, .fa-solid {
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .fa-brands:hover, .fa-solid:hover {
+      transform: scale(1.2);
+    }
+
+    /* Responsive Fixes */
+    @media (max-width: 768px) {
+      .hero {
+        min-height: auto;
+        text-align: center;
+        padding: 60px 20px;
+      }
+
+      .hero-content {
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .top-bar {
+        padding: 15px 0;
+      }
+
+      .top-bar .container > .d-flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+      }
+
+      .top-bar .container > .d-flex > div:first-child {
+        font-size: 13px;
+      }
+
+      .countdown-item {
+        margin: 0 3px;
+      }
+
+      .countdown-item .number {
+        padding: 4px 8px;
+        min-width: 35px;
+        font-size: 14px;
+      }
+
+      .countdown-item .label {
+        font-size: 10px;
+      }
+    }
+
+    /* Smooth Scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Link Styles */
+    .link-success {
+      color: var(--primary-green) !important;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .link-success:hover {
+      color: #256b46 !important;
+      text-decoration: underline;
+    }
+
+    .link-light {
+      color: white !important;
+      text-decoration: underline;
+      font-weight: 600;
+      transition: opacity 0.3s;
+    }
+
+    .link-light:hover {
+      opacity: 0.8;
+    }
